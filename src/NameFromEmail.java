@@ -9,7 +9,7 @@ public class NameFromEmail {
         System.out.println(nameFromEmail("elek.viz@exam.com"));
     }
 
-    public static int nameFromEmail(String input) {
+    public static String nameFromEmail(String input) {
         String[] parts = input.split(("[\\W]"),3);
         String first = parts[0];
         String last = parts[1];
@@ -17,9 +17,9 @@ public class NameFromEmail {
         String firstName = first.substring(0,1).toUpperCase() + first.substring(1);
         String lastName = last.substring(0,1).toUpperCase() + last.substring(1);
 
-        System.out.println(lastName + " " + firstName);
+        String output = lastName + " " + firstName;
 
-        return 0; //figure out how to return string
+        return output;
     }
 
 }
