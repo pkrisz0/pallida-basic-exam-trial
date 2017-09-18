@@ -6,11 +6,12 @@ public class OddFilter {
     public static void main(String[] args) {
         // Create a function that takes a list as a parameter,
         // and returns a new list with every odd element from the orignal list
-        //System.out.println(oddFilter(Arrays.asList(1, 2, 3, 4, 5));
-        // System.out.println(oddFilter(Arrays.asList(1, 2, 3, 4, 5)));
+        System.out.println(oddFilter(1, 2, 3, 4, 5));
         // should print [1, 3, 5]
 
-        int[] input = {1, 2, 3, 4, 5};
+    }
+
+    public static List oddFilter(int...input){
 
         ArrayList<Integer> output = new ArrayList<Integer>();
 
@@ -19,14 +20,7 @@ public class OddFilter {
                 output.add(input[i]);
             }
         }
-        System.out.println(output);
-
-
-
-    }
-
-    public static List oddFilter(){
-         return null;
+        return output;
     }
 }
 
