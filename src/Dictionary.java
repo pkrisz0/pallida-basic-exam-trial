@@ -9,6 +9,7 @@ public class Dictionary {
         addWord("alma", "apple");
         addWord("fa", "tree");
         removeWord("alma");
+        translateToHun("tree");
         translateToEng("fa");
     }
 
@@ -25,12 +26,15 @@ public class Dictionary {
     // Implement these methods. They should return the translation of the given word from the map
     public static String translateToHun(String engWord) {
     // get key of object
-
-        return null;
+        for (String hung : map.keySet()) {
+            if (map.get(hung).equals(engWord)){
+                return hung;
+            }
+        }
+        return "Next time.";
     }
 
     public static String translateToEng(String hunWord) {
-        System.out.println(map.get(hunWord));
-        return null;
+        return map.get(hunWord);
     }
 }

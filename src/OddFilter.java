@@ -8,7 +8,6 @@ public class OddFilter {
         // and returns a new list with every odd element from the orignal list
         System.out.println(oddFilter(1, 2, 3, 4, 5));
         // should print [1, 3, 5]
-
     }
 
     public static List oddFilter(int...input){
